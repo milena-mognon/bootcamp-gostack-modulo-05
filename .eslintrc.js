@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'plugin:react/recommended',
+    // 'plugin:react/recommended',
     'airbnb',
     'prettier',
     'prettier/react'
@@ -33,6 +33,8 @@ module.exports = {
         extensions: ['.jsx', '.js']
       }
     ],
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'react/state-in-constructor': 'off',
+    // "react/jsx-curly-newline": "off",
   },
 };

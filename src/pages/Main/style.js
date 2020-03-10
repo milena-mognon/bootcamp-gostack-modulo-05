@@ -43,7 +43,7 @@ const rotate = keyframes`
   }
 `;
 
-export const SubmitButton = styled.button.attrs((props) => ({
+export const SubmitButton = styled.button.attrs(props => ({
   type: 'submit',
   disabled: props.loading,
 }))`
@@ -62,7 +62,7 @@ export const SubmitButton = styled.button.attrs((props) => ({
     opacity: 0.6;
   }
 
-  ${(props) =>
+  ${props =>
     props.loading &&
     css`
       svg {
